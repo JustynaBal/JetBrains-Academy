@@ -1,0 +1,73 @@
+body{
+    background: url("./world.png") no-repeat;
+    background-size: contain;
+    background-position-y: center;
+    display: flex;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 64px;
+    margin-top: 32px;
+    font-weight: 800;
+}
+
+.flshcards{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: calc(450px + 32px);
+    gap: 16px;
+    margin: 0 auto;
+}
+.card {
+    width: 150px;
+    height: 150px;
+    background: #840032;
+    color: #E5DADA;
+    border-radius: 25px;
+    flex-wrap: wrap;
+    display: flex;
+    transition: 1s linear;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.front, .back, .center{
+    border-radius: 25px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.front{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background: #840032;
+    color: #E5DADA;
+    backface-visibility: hidden;
+}
+
+.back{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    background: #E5DADA;
+    color: #840032;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.card:hover{
+    transform: rotateY(180deg);
+}
