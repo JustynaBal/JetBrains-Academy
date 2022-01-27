@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    background: darkgreen;
+}
+.white-keys{
+    display: flex;
+    justify-content: center;
+margin: 10% auto;
+    width: 500px;
+}
+.black-keys{
+    margin: 10% auto;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    right: 0;
+    width: 350px;
+
+}
+.whiteKey {
+    display: flex;
+    width: 50px;
+    height: 150px;
+    background: white;
+    color: black;
+    margin-left: 0px;
+    justify-content: center;
+    align-items: end;
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    padding-bottom: 20px;
+
+}
+
+.blackKey {
+    display: flex;
+    width: 30px;
+    height: 75px;
+    background: black;
+    color: white;
+    margin-left: 0px;
+    justify-content: center;
+    align-items: end;
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+    padding-bottom: 10px;
+}
+
+.twoBlack{
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+    justify-content: space-evenly;
+    width: 120px;
+}
+
+.threeBlack{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 170px;
+}
